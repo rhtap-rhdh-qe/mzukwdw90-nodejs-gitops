@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: mzukwdw90-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: mzukwdw90-nodejs 
+  name: mzukwdw90-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: mzukwdw90-nodejs 
